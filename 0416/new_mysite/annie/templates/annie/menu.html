@@ -1,0 +1,19 @@
+<h1>自我介紹</h1>
+
+<p>介紹{{introduction111|length }}個人</p>
+<table class="table">
+    <tr>
+        <th>姓名</th>
+        <th>生日</th>
+        <th>性別</th>
+    </tr>
+    {% for introduction in introduction111 %}
+    <tr>
+        <td>{{ introduction.name }}</td>
+        <td>{{ introduction.birthday }}</td>
+        <td>{{ introduction.gender }}</td>
+    </tr>
+    {% endfor %}
+ </table>
+     
+    
