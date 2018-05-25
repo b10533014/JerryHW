@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+輸入成績: <input type="text" id="myText" value="">
+
+<p>0~59為不及格，60~100為及格</p>
+
+<button onclick="myFunction()">顯示結果</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    if (x>=0 & x<=59) {
+    		document.getElementById("demo").innerHTML = "不及格";
+    	}else{
+    	if (60>=0 & x<=100) {
+    		document.getElementById("demo").innerHTML = "及格";
+    	}else{
+    		document.getElementById("demo").innerHTML = "請輸入0~100";
+    	}
+		}
+}
+</script>
+
+</body>
+</html>
